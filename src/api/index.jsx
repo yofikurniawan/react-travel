@@ -4,6 +4,7 @@ import axios from 'axios';
 // import js cookie
 import Cookies from 'js-cookie';
 
+
 const api = axios.create({
 
     //set endpoint API
@@ -17,7 +18,7 @@ const api = axios.create({
 });
 
 //handle unathenticated
-Api.interceptors.response.use(
+api.interceptors.request.use(
   function (response) {
     //return response
     return response;
@@ -37,4 +38,4 @@ Api.interceptors.response.use(
   }
 );
 
-export default Api;
+export default api;
