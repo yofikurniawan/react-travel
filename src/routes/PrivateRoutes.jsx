@@ -5,9 +5,6 @@ import Cookies from "js-cookie";
 import { Navigate } from "react-router-dom";
 
 function privateRoutes({ children }) {
-  //navigate
-  const navigate = useNavigate();
-
   //token
   const token = Cookies.get("token");
 

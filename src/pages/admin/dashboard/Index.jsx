@@ -2,7 +2,7 @@
 import React from "react";
 
 // import layout admin
-import LayoutAdmin from "../../layouts/Admin";
+import LayoutAdmin from "../../../layouts/Admin";
 
 function Dashboard() {
 
@@ -26,3 +26,5 @@ function Dashboard() {
   );
 
 }
+
+export default Dashboard;

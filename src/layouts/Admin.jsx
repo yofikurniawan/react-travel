@@ -17,7 +17,7 @@ import Cookies from 'js-cookie';
 import { useNavigate, Link } from "react-router-dom";
 
 // import toas
-import toast from "react-toastify";
+import toast from "react-hot-toast";
 
 const LayoutAdmin = ({ children }) => {
   // state user
