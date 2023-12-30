@@ -15,6 +15,9 @@ import CategoriesIndex from '../pages/admin/categories/Index.jsx';
 //import view admin category Create
 import CategoryCreate from '../pages/admin/categories/Create.jsx';
 
+//import view admin category Edit
+import CategoryEdit from '../pages/admin/categories/Edit.jsx';
+
 function RoutesIndex() {
     return (
         <Routes>
@@ -40,6 +43,33 @@ function RoutesIndex() {
                 element={
                         <PrivateRoutes>
                             <CategoryCreate />
+                        </PrivateRoutes>
+                }
+            />
+
+            <Route
+                path="/admin/categories/create"
+                element={
+                        <PrivateRoutes>
+                            <CategoryCreate />
+                        </PrivateRoutes>
+                }
+            />
+
+            <Route
+                path="/admin/categories/create"
+                element={
+                        <PrivateRoutes>
+                            <CategoryCreate />
+                        </PrivateRoutes>
+                }
+            />
+
+            <Route
+                path="/admin/categories/edit/:id"
+                element={
+                        <PrivateRoutes>
+                            <CategoryEdit />
                         </PrivateRoutes>
                 }
             />
