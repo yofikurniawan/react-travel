@@ -1,5 +1,12 @@
+//import Toaster
+import { Toaster } from "react-hot-toast";
+
 function App() {
-  return <div className="App">Hello, Yofi Kurniawan</div>;
+  return (
+    <>
+      <Toaster />
+    </>
+  );
 }
 
 export default App;
