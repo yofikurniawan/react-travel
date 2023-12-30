@@ -1,15 +1,13 @@
 // import axios
-import axios from 'axios';
+import axios from "axios";
 
 // import js cookie
 import Cookies from 'js-cookie';
-
 
 const api = axios.create({
 
     //set endpoint API
     baseURL: import.meta.env.VITE_APP_BASEURL,
-
     //set header axios
     headers: {
         "Accept": "application/json",
@@ -33,6 +31,7 @@ api.interceptors.request.use(
       window.location = "/admin/login";
     } else {
       //reject promise error
+      // console.log(error);
       return Promise.reject(error);
     }
   }
